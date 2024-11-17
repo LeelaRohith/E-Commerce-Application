@@ -27,26 +27,30 @@ const Navbar = () => {
   return (
     <>
       <Box>
-        <div className="flex items-center justify-between px-5 lg:px-20 h-[70px] border-b">
+        <div className="flex items-center justify-between  lg:px-20 h-[70px] border-b">
           <div className="flex items-center gap-9">
             <div className="flex items-center gap-2">
-              <IconButton>
-                <MenuIcon></MenuIcon>
-              </IconButton>
+              {!isLarge && (
+                <IconButton>
+                  <MenuIcon></MenuIcon>
+                </IconButton>
+              )}
               <h1 className="logo cursor-pointer text-lg md:text-2xl text-primary-color">
                 VastraBuy
               </h1>
             </div>
-            <ul className="flex items-center font-medium text-gray-800 ">
-              {menuItems.map((menuItem, index) => (
-                <li
-                  className="mainCategory hover:text-primary-color hover:border-b-2 h-[70px] px-4 border-primary-color flex items-center"
-                  key={menuItem.key}
-                >
-                  {menuItem.item}
-                </li>
-              ))}
-            </ul>
+            {isLarge && (
+              <ul className="flex items-center font-medium text-gray-800 ">
+                {menuItems.map((menuItem, index) => (
+                  <li
+                    className="mainCategory hover:text-primary-color hover:border-b-2 h-[70px] px-4 border-primary-color flex items-center"
+                    key={menuItem.key}
+                  >
+                    {menuItem.item}
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
           <div className="flex items-center gap-1 lg:gap-6 ">
             <IconButton>
