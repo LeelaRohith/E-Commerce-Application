@@ -1,4 +1,4 @@
-const menLevelTwo = [
+export const menLevelTwo = [
   {
     name: "Topwere",
     categoryId: "men_topwear",
