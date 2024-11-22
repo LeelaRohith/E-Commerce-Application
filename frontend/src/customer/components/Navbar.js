@@ -9,7 +9,7 @@ import {
 import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+//import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import {
   AddShoppingCart,
   FavoriteBorder,
@@ -18,12 +18,6 @@ import {
 import CategorySheet from "./CategorySheet";
 import { maincategory } from "../../data/category/maincategory";
 const Navbar = () => {
-  const menuItems = [
-    { key: 1, item: "Men" },
-    { key: 2, item: "Women" },
-    { key: 3, item: "Home & Furniture" },
-    { key: 4, item: "Electronics" },
-  ];
   const theme = useTheme();
   const isLarge = useMediaQuery(theme.breakpoints.up("lg"));
   const [selectedCategory, setSelectedCategory] = useState("men");

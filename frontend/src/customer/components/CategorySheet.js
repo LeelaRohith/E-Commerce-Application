@@ -15,7 +15,7 @@ const categoryThree = {
 const CategorySheet = ({ selectedCategory, setShowSheet }) => {
   const childCategory = (category, parentCategoryId) => {
     return category.filter(
-      (child) => child.parentCategoryId == parentCategoryId
+      (child) => child.parentCategoryId === parentCategoryId
     );
   };
   return (
