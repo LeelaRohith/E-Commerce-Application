@@ -17,7 +17,7 @@ import { FilterAlt } from "@mui/icons-material";
 const Product = () => {
   const theme = useTheme();
   const isLarge = useMediaQuery(theme.breakpoints.up("lg"));
-  const [sort, setSort] = useState();
+  const [sort, setSort] = useState("");
   const handleSortChange = (event) => {
     setSort(event.target.value);
   };
@@ -29,10 +29,10 @@ const Product = () => {
         </h1>
       </div>
       <div className="lg:flex lg:justify-between">
-        <section className="filter_section hidden lg:block">
-          <FilterSection></FilterSection>
+        <section className="filter_section hidden lg:block lg:w-[22%]">
+          {<FilterSection />}
         </section>
-        <div className="w-full lg:w-[80%] space-y-5">
+        <div className="w-full lg:w-[78%] space-y-5">
           <div className="flex justify-between items-center px-9 h-[40px]">
             <div className="relative w-[50%]">
               {!isLarge && (
@@ -52,7 +52,7 @@ const Product = () => {
                 labelId="demo-simple-select-label"
                 id="demo-simple-select"
                 value={sort}
-                label="Age"
+                label="sort"
                 onChange={handleSortChange}
               >
                 <MenuItem value={"price_low"}>Price : Low - High</MenuItem>

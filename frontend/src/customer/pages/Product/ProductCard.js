@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "./ProductCard.css";
 import { Button } from "@mui/material";
 import { Favorite, ModeComment } from "@mui/icons-material";
-import { teal } from "@mui/material/colors";
+
 const images = [
   "https://5.imimg.com/data5/SELLER/Default/2021/9/EW/WK/UC/20506059/e-commerce-men-t-shirt-photography-500x500.jpg",
   "https://5.imimg.com/data5/SELLER/Default/2021/9/JY/UZ/QP/20506059/e-commerce-men-t-shirt-photography-250x250.jpg",
