@@ -12,6 +12,7 @@ import {
   WorkspacePremium,
 } from "@mui/icons-material";
 import SimilarProduct from "./SimilarProduct";
+import Reviewcard from "../Review/Reviewcard";
 const ProductDetails = () => {
   const [quantity, setQuantity] = useState(1);
   return (
@@ -111,6 +112,10 @@ const ProductDetails = () => {
           </div>
           <div className="mt-5">
             <p>Description of the product</p>
+          </div>
+          <div className="mt-12 space-y-5">
+            <Reviewcard />
+            <Divider />
           </div>
         </section>
       </div>
