@@ -14,7 +14,7 @@ function App() {
         {/* <Home></Home> */}
         {/* <Product /> */}
         {/* <ProductDetails></ProductDetails> */}
-        {/* <Review /> */}
+        <Review />
       </div>
     </ThemeProvider>
   );
